@@ -1,0 +1,24 @@
+{
+  "name": "certificacao",
+  "description": "Dashboard desenvolvido para a avaliação final do curso de certificação bootstrap",
+  "authors": [
+    "Léo Campos"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "dashboard",
+    "bootstrap"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "components-font-awesome": "^4.6.3",
+    "bootstrap": "v4.0.0-alpha.2",
+    "jquery": "2.2.4"
+  }
+}

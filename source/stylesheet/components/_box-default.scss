@@ -1,0 +1,21 @@
+.box-default {
+	width: 100%;
+	padding: 1.2rem;
+	background-color: white;
+	border-radius: 3px;
+	margin-bottom: $marginb;
+
+	> .icon {
+		margin-bottom: 0.6rem;
+		display: block;
+		font-size: 1rem;
+		color: $lightGray;
+		text-align: right;
+	}
+
+	.image {
+		@extend .img-fluid;
+		margin-bottom: 1rem;
+		display: initial;
+	}
+}

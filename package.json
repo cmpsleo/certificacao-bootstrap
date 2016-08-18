@@ -1,0 +1,20 @@
+{
+  "name": "certificacao",
+  "version": "1.0.0",
+  "description": "Dashboard desenvolvido para a avaliação final do curso de certificação bootstrap",
+  "keywords": [
+    "dashboard",
+    "bootstrap"
+  ],
+  "author": "Léo Campos",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

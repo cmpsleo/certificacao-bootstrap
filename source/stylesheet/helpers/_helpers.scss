@@ -1,0 +1,13 @@
+body {
+	background-color: $bgGray;
+}
+
+a {
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+figure {
+	margin: 0;
+}
