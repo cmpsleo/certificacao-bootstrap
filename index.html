@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
-	<nav class="off-canvas">
+	<nav class="off-canvas" data-class="off-canvas">
 		<ul class="list">
 			<li class="item"><a class="link" href="#"><i class="icon fa fa-home"></i></a></li>
 			<li class="item"><a class="link" href="#"><i class="icon fa fa-bed"></i></a></li>
@@ -31,114 +31,106 @@
 		</ul>
 
 		<figure class="logo">
-			<img class="image" src="dist/img/logo.png" title="Logotipo" alt="Logotipo">
+			<img class="image" src="dist/img/logo.png" title="Logotipo Monitoring" alt="Logotipo Monitoring">
 		</figure>
 	</nav>
 
 	<div class="_container">
-		<header class="top-header">
-			<div class="left">	
-				<div class="date">
-					<select class="select-default">
-						<option>March 5, 2016</option>
-						<option>March 6, 2016</option>
-						<option>March 7, 2016</option>
-						<option>March 8, 2016</option>
-					</select>
-				</div>
-			</div>
-
-			<div class="right">
-				<button class="settings"><i class="icon fa fa-gear"></i></button>
-				<figure class="user">
-					<img class="photo" src="dist/img/me.jpg" title="Léo Campos" alt="Léo Campos">
-				</figure>
-			</div>
-		</header>
+		<!-- <header class="top-header">
+		</header> -->
 
 		<section class="home-page">
 			<article class="sanitation-data">
-				<div class="box">
-					<a class="icon fa fa-gear" href=""></a>
-					<h3 class="title">power</h3>
-					<figure class="photo">
-						<img class="image" src="dist/img/power.png" title="Power Image" alt="Power Image">
-					</figure>
-					<div class="info">
-						<p class="text"><span class="number -power">1313 kw</span> <span class="date">month</span></p>
-						<p class="text"><span class="number -power">13 kw</span> <span class="date">today</span></p>
+				<div class="_box">
+					<div class="headerbox">
+						<a class="icon fa fa-gear" href="#"></a>
+					</div>
+
+					<div class="bodybox">
+						<h3 class="title">power</h3>
+
+						<figure class="photo">
+							<img class="image" src="dist/img/power.png" title="Power Image" alt="Power Image">
+						</figure>
+
+						<div class="info">
+							<p class="text">
+								<span class="number -power">1313 kw</span>
+								<span class="date">month</span>
+							</p>
+
+							<p class="text">
+								<span class="number -power">13 kw</span>
+								<span class="date">today</span>
+							</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="box">
-					<a class="icon fa fa-gear" href=""></a>
-					<h3 class="title">water</h3>
-					<figure class="photo">
-						<img class="image" src="dist/img/wather.png" title="Water Image" alt="Water Image">
-					</figure>
-					<div class="info">
-						<p class="text"><span class="number -water">2.3 m3</span> <span class="date">month</span></p>
-						<p class="text"><span class="number -water">0.3 m3</span> <span class="date">today</span></p>
+				<div class="_box">
+					<div class="headerbox">
+						<a class="icon fa fa-gear" href="#"></a>
+					</div>
+
+					<div class="bodybox">
+						<h3 class="title">water</h3>
+
+						<figure class="photo">
+							<img class="image" src="dist/img/water.png" title="Water Image" alt="Water Image">
+						</figure>
+
+						<div class="info">
+							<p class="text">
+								<span class="number -water">1313 kw</span>
+								<span class="date">month</span>
+							</p>
+
+							<p class="text">
+								<span class="number -water">13 kw</span>
+								<span class="date">today</span>
+							</p>
+						</div>
 					</div>
 				</div>
 
-				<div class="box">
-					<a class="icon fa fa-gear" href=""></a>
-					<h3 class="title">gas</h3>
-					<figure class="photo">
-						<img class="image" src="dist/img/gas.png" title="Gas Image" alt="Gas Image">
-					</figure>
-					<div class="info">
-						<p class="text"><span class="number -gas">12.4 mpg</span> <span class="date">month</span></p>
-						<p class="text"><span class="number -gas">0.8 mpg</span> <span class="date">today</span></p>
+				<div class="_box">
+					<div class="headerbox">
+						<a class="icon fa fa-gear" href="#"></a>
+					</div>
+
+					<div class="bodybox">
+						<h3 class="title">gas</h3>
+
+						<figure class="photo">
+							<img class="image" src="dist/img/gas.png" title="Gas Image" alt="Gas Image">
+						</figure>
+
+						<div class="info">
+							<p class="text">
+								<span class="number -gas">1313 kw</span>
+								<span class="date">month</span>
+							</p>
+
+							<p class="text">
+								<span class="number -gas">13 kw</span>
+								<span class="date">today</span>
+							</p>
+						</div>
 					</div>
 				</div>
 			</article>
 
 			<article class="weather-data">
-				<div class="box-temp">
-					<a class="icon fa fa-gear" href=""></a>
-					<figure class="photo">
-						<img class="image" src="dist/img/temp.png" title="Temperature Image" alt="Temperature Image">
-					</figure>
-				</div>
-
-				<div class="box-waether">
-					<div class="day">
-						<p class="title">Mon</p>
-						<i class="icon fa fa-sun-o"></i>
-						<p class="text">63º</p>
+				<div class="_box">
+					<div class="headerbox">
+						<a class="icon fa fa-gear" href="#"></a>
 					</div>
 
-					<div class="day">
-						<p class="title">Tue</p>
-						<i class="icon fa fa-cloud"></i>
-						<p class="text">51º</p>
+					<div class="bodybox">
+						<figure class="photo">
+							<img class="image" src="dist/img/temp.png" title="Temperature Image" alt="Temperature Image">
+						</figure>
 					</div>
-
-					<div class="day">
-						<p class="title">Wed</p>
-						<i class="icon fa fa-star"></i>
-						<p class="text">68º</p>
-					</div>
-
-					<div class="day">
-						<p class="title">Thur</p>
-						<i class="icon fa fa-smile-o"></i>
-						<p class="text">52º</p>
-					</div>
-
-					<div class="day">
-						<p class="title">Fri</p>
-						<i class="icon fa fa-bolt"></i>
-						<p class="text">52º</p>
-					</div>
-				</div>
-			</article>
-
-			<article class="controls-monotoring">
-				<div class="control">
-					
 				</div>
 			</article>
 		</section>

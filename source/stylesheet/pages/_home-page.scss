@@ -2,47 +2,47 @@
 	.sanitation-data {
 		margin-bottom: $marginb;
 
-		@include media-breakpoint-up(md) {
+		@media(min-width: map-get($grid-breakpoints, md)) {
 			display: flex;
 			justify-content: space-between;
 		}
 
-		.box {
-			@extend .box-default;
-
-			@include media-breakpoint-up(md) {
-				width: 30%;
+		> ._box {
+			@media(min-width: map-get($grid-breakpoints, md)) {
+				width: 32%;
 			}
 
-			> .title {
-				margin-bottom: 1rem;
-				color: #A4A4A4;
-				font-size: 1rem;
-			}
+			.bodybox {
+				> .title {
+					font-size: 1rem;
+					color: $gray-light;
+					@extend .card-title;
+				}
 
-			> .info {
-				display: flex;
+				> .info {
+					display: flex;
 
-				.text {
-					.number {
+					.text {
 						margin-right: 1rem;
 
-						&.-power {
-							color: #BF7B86;
-						}
+						.number {
+							&.-power {
+								color: $powerColor;
+							}
 
-						&.-water {
-							color: #81C295;
-						}
+							&.-water {
+								color: $waterColor;
+							}
 
-						&.-gas {
-							color: #7695BB;
+							&.-gas {
+								color: $gasColor;
+							}
 						}
 					}
 
 					.date {
-						color: #A4A4A4;
 						display: block;
+						color: darken($gray-lighter, 10%);
 					}
 				}
 			}
@@ -50,67 +50,14 @@
 	}
 
 	.weather-data {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-
-		.box-temp {
-			@extend .box-default;
-			text-align: center;
-
-			@include media-breakpoint-up(md) {
-				width: 30%;
-			}
-		}
-
-		.box-waether {
-			@extend .box-default;
-			display: flex;
-			justify-content: center;
-
-			@include media-breakpoint-up(md) {
-				width: 65%;
-			}
-
-			@include media-breakpoint-down(xs) {
-				flex-wrap: wrap;
-			}
-
-			.day {
-				padding: 2rem 1.6rem;
-				text-align: center;
-				color: #A4A4A4;
-				font-size: 1rem;
-				cursor: pointer;
-				@include transition (0.3s);
-
-				@include media-breakpoint-down(xs) {
-					width: 50%;
-				}
-
-				&:hover {
-					background-color: #F9F9F9;
-					color: #333;
-					@include transition (0.3s);
-
-					.icon {
-						color: darken(#FCBF5F, 10%);
+		> ._box {
+			.bodybox {
+				.photo {
+					.image {
+						margin: 0 auto;
 					}
 				}
-
-				> .icon {
-					font-size: 3rem;
-					color: #FCBF5F;
-					padding: 1rem 0;
-					@include transition (0.3s);
-				}
 			}
-		}
-	}
-
-	.controls-monotoring {
-		.control {
-			@extend .box-default;
 		}
 	}
 }

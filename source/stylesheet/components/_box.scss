@@ -1,0 +1,40 @@
+._box {
+	width: 100%;
+	padding: 1.2rem;
+	margin-bottom: $marginb;
+	border: 0;
+	@extend .card;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@include media-breakpoint-up(md) {
+		margin-bottom: 0;
+	}
+
+	.headerbox {
+		display: flex;
+		justify-content: flex-end;
+
+		> .icon {
+			color: darken($gray-lighter, 10%);
+			@include transition(color 0.3s);
+
+			&:hover {
+				color: darken($gray-lighter, 40%);
+				@include transition(color 0.3s);
+			}
+		}
+	}
+
+	.bodybox {
+		padding: 1.25rem 0;
+
+		.photo {
+			.image {
+				@extend .img-fluid;
+			}
+		}
+	}
+}
