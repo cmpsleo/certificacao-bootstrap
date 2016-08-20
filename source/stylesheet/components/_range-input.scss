@@ -1,0 +1,28 @@
+.range-input {
+	width: 80%;
+	appearance: none;
+
+	&::-webkit-slider-runnable-track {
+		background: linear-gradient(to right, #7A8AF6 1%, #AA86C9 51%, #F38084 100%);
+		appearance: none;
+		height: 3px;
+	}
+
+	&::-webkit-slider-thumb {
+		appearance: none;
+		position: relative;
+		border-radius: 50%;
+		height: 2.3rem;
+		width: 2.3rem;
+		border: 1px solid $gray-lighter;
+		box-shadow: 0 0.2rem 1rem 0.05rem rgba(#CCC, 50%);
+		max-width: 80px;
+		bottom: 18px;
+		background-color: #FFF;
+		transition: border 1000ms ease;
+	}
+
+	&:focus {
+		outline: none;
+	}
+}

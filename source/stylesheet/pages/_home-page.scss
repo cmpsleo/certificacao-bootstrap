@@ -50,12 +50,74 @@
 	}
 
 	.weather-data {
-		> ._box {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+
+		.temp-day {
+			@include media-breakpoint-up(md) {
+				width: 32%;
+			}
+
 			.bodybox {
+				text-align: center;
+
+				.range-input {
+					padding-top: 3rem;
+				}
+
 				.photo {
 					.image {
 						margin: 0 auto;
 					}
+				}
+			}
+		}
+
+		.waether-days {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+
+			@include media-breakpoint-up(md) {
+				width: 66%;
+			}
+
+			.day {
+				width: 50%;
+				padding: 1rem 0;
+				cursor: pointer;
+				text-align: center;
+
+				@include media-breakpoint-up(sm) {
+					width: 20%;
+				}
+
+				@include media-breakpoint-up(md) {
+					width: 20%;
+					padding: 2.7rem 0;
+				}
+
+				&:hover {
+					background-color: $gray-lightest;
+				}
+
+				.titleday,
+				.temp {
+					padding-bottom: 1rem;
+					font-size: 1.1rem;
+					color: $gray-light;
+
+					&:last-child {
+						padding-bottom: 0;
+					}
+				}
+
+				.iconday {
+					font-size: 3rem;
+					color: #FCBF5F;
+					padding-bottom: 2rem;
 				}
 			}
 		}
