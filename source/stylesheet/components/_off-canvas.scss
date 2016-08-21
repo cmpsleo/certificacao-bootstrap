@@ -83,10 +83,10 @@
 			height: 40px;
 		}
 
-		// @media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
-		// 	position: relative;
-		// 	margin-top: 2rem;
-		// }
+		@media(max-device-width: map-get($grid-breakpoints, md)) and (orientation : landscape) {
+			position: relative;
+			margin-top: 2rem;
+		}
 	}
 }
 

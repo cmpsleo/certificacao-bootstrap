@@ -36,10 +36,13 @@ $(document).ready(function() {
 		// 	hideOffcanvas($('html'));
 		// });
 
-		// $('html, body').on('swipeleft swiperight', '[data-class="remove-swipe"]', function(e) {
-		// 	e.stopImmediatePropagation();
-		// 	e.preventDefault();
-		// });
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 80) {
+				$('.top-header').addClass('fixed');
+			} else {
+				$('.top-header').removeClass('fixed');
+			};
+		});
 	};
 
 	$('[data-class="gallery"]').lightbox({

@@ -3,6 +3,20 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	@include transition(0.3s);
+
+	&.fixed {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		padding: 1rem 0.3rem;
+		z-index: 1;
+		@include transition(0.3s);
+		background-color: #FFF;
+		margin: 0;
+		box-shadow: 0 0px 4px rgba(0,0,0,0.5);
+	}
 
 	> .left {
 		width: 64%;
