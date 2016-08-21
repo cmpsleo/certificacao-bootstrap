@@ -28,12 +28,17 @@ $(document).ready(function() {
 
 	// DETECTANDO LARGURA DA VIEWPORT PARA REMOVER SWIPE
 	if (jQuery(window).width() < 992) {
-		$('html, body').on("swiperight", function(){
-			openOffcanvas($('html'));
-		});
+		// $('html, body').on('swiperight', function(){
+		// 	openOffcanvas($('html'));
+		// });
 
-		$('html, body').on("swipeleft", function(){
-			hideOffcanvas($('html'));
-		});
+		// $('html, body').on('swipeleft', function(){
+		// 	hideOffcanvas($('html'));
+		// });
+
+		// $('html, body').on('swipeleft swiperight', '[data-class="remove-swipe"]', function(e) {
+		// 	e.stopImmediatePropagation();
+		// 	e.preventDefault();
+		// });
 	};
 });
