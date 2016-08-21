@@ -1,0 +1,31 @@
+._toggle {
+	width: 53px;
+	height: 25px;
+	position: relative;
+	background-color: #D3D3D3;
+	border-radius: 100px;
+	cursor: pointer;
+	@include transition(background 0.3s);
+
+	&.checked {
+		background-color: #3EEBA0;
+		@include transition(background 0.3s);
+
+		.thumb {
+			margin-left: 21px;
+			@include transition(0.3s);
+		}
+	}
+
+	.thumb {
+		width: 32px;
+		height: 32px;
+		position: absolute;
+		top: 50%;
+		transform: translate(0,-50%);
+		border-radius: 50%;
+		background-color: #FFF;
+		box-shadow: 0 0.2rem 1rem 0.05rem rgba(#CCC, 50%);
+		@include transition(0.3s);
+	}
+}

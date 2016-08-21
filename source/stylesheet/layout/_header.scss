@@ -1,9 +1,54 @@
 .top-header {
+	margin-bottom: $marginb;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
 	> .left {
-		@include setColumn(6, xs);
+		width: 64%;
+		display: flex;
+		align-items: center;
+
+		.iconmenu {
+			margin-right: 0.5rem;
+			color: $gray;
+			@extend .btn;
+			@extend .btn-secondary;
+			border: 0;
+
+			@include media-breakpoint-up(lg) {
+				display: none;
+			}
+		}
+
+		._select {
+			width: 160px;
+		}
 	}
 
 	> .right {
-		@include setColumn(6, xs);
+		width: 33%;
+		display: flex;
+		justify-content: flex-end;
+
+		.configbutton {
+			margin-right: 1rem;
+			@extend .btn;
+			@extend .btn-secondary;
+			border: 0;
+			color: darken($gray-lighter, 10%);
+		}
+
+		.user {
+			width: 36px;
+			height: 36px;
+
+			> .photo {
+				> .image {
+					@extend .img-fluid;
+					border-radius: 50%;
+				}
+			}
+		}
 	}
 }

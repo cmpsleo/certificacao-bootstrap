@@ -1,0 +1,8 @@
+._select {
+	appearance: none;
+	@extend .form-control;
+	background-image: url(../img/arrow-select.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	border: 0;
+}

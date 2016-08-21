@@ -1,3 +1,8 @@
 ._container {
 	padding: 6% 2%;
+
+	@include media-breakpoint-up(lg) {
+		margin-left: 13%;
+		padding: 3% 2%;
+	}
 }

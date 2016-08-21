@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
-	<nav class="off-canvas" data-class="off-canvas">
+	<nav class="off-canvas">
 		<ul class="list">
 			<li class="item"><a class="link" href="#"><i class="icon fa fa-home"></i></a></li>
 			<li class="item"><a class="link" href="#"><i class="icon fa fa-bed"></i></a></li>
@@ -36,8 +36,27 @@
 	</nav>
 
 	<div class="_container">
-		<!-- <header class="top-header">
-		</header> -->
+		<header class="top-header">
+			<div class="left">
+				<a class="iconmenu fa fa-bars" href="javascript:;" data-class="openmenu"></a>
+				<select class="_select">
+					<option>March 5, 2016</option>
+					<option>March 6, 2016</option>
+					<option>March 7, 2016</option>
+					<option>March 8, 2016</option>
+				</select>
+			</div>
+
+			<div class="right">
+				<a class="configbutton fa fa-gear" href="javascript:;"></a>
+
+				<div class="user">
+					<figure class="photo">
+						<img class="image" src="dist/img/me.jpg" title="Léo Campos" alt="Léo Campos">
+					</figure>
+				</div>
+			</div>
+		</header>
 
 		<section class="home-page">
 			<article class="sanitation-data">
@@ -164,6 +183,72 @@
 						<p class="titleday">Fri</p>
 						<i class="iconday fa fa-frown-o"></i>
 						<p class="temp">52°</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="lights-camera">
+				<div class="controls-lights">
+					<div class="_box item">
+						<div class="title">
+							<i class="iconlight fa fa-lightbulb-o"></i>
+							<p class="text">Lights</p>
+						</div>
+
+						<div class="_toggle" data-class="toggle">
+							<div class="thumb"></div>
+						</div>
+					</div>
+
+					<div class="_box item">
+						<div class="title">
+							<i class="iconlight fa fa-video-camera"></i>
+							<p class="text">Camera</p>
+						</div>
+
+						<div class="_toggle checked" data-class="toggle">
+							<div class="thumb"></div>
+						</div>
+					</div>
+
+					<div class="_box item">
+						<div class="title">
+							<i class="iconlight fa fa-fire"></i>
+							<p class="text">Gas</p>
+						</div>
+
+						<div class="_toggle checked" data-class="toggle">
+							<div class="thumb"></div>
+						</div>
+					</div>
+
+					<div class="_box item">
+						<div class="title">
+							<i class="iconlight fa fa-lock"></i>
+							<p class="text">Locks</p>
+						</div>
+
+						<div class="_toggle" data-class="toggle">
+							<div class="thumb"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="camera-controls">
+					<div class="item">
+						<figure class="photo">
+							<img class="image" src="dist/img/photo1.jpg" title="Image One" alt="Image One">
+						</figure>
+
+						<a class="iconexpand fa fa-expand" href="javascript:;"></a>
+					</div>
+
+					<div class="item">
+						<figure class="photo">
+							<img class="image" src="dist/img/photo2.jpg" title="Image Two" alt="Image Two">
+						</figure>
+
+						<a class="iconexpand fa fa-expand" href="javascript:;"></a>
 					</div>
 				</div>
 			</article>

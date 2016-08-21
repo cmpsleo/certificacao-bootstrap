@@ -54,6 +54,7 @@
 		justify-content: space-between;
 		align-items: flex-start;
 		flex-wrap: wrap;
+		margin-bottom: $marginb;
 
 		.temp-day {
 			@include media-breakpoint-up(md) {
@@ -99,6 +100,10 @@
 					padding: 2.7rem 0;
 				}
 
+				@media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
+					width: 20%;
+				}
+
 				&:hover {
 					background-color: $gray-lightest;
 				}
@@ -118,6 +123,131 @@
 					font-size: 3rem;
 					color: #FCBF5F;
 					padding-bottom: 2rem;
+				}
+			}
+		}
+	}
+
+	.lights-camera {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		@include media-breakpoint-up(lg) {
+			align-items: flex-start;
+		}
+
+		.controls-lights {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-bottom: $marginb;
+
+			@include media-breakpoint-up(md) {
+				width: 48%;
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: 55%;
+			}
+
+			> .item {
+				display: flex;
+				justify-content: space-around;
+				padding: 2rem 0;
+
+				@include media-breakpoint-up(sm) {
+					width: 48%;
+					max-height: 90px;
+					margin-bottom: $marginb;
+
+					&:nth-child(3n),
+					&:nth-child(4n) {
+						margin-bottom: 0;
+					}
+				}
+
+				@media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
+					width: 48%;
+					max-height: 90px;
+				}
+
+				> .title {
+					display: flex;
+					align-items: center;
+
+					.iconlight {
+						color: darken($gray-lighter, 20%);
+						font-size: 1.6rem;
+						margin-right: 0.75rem;
+					}
+
+					.text {
+						font-size: 1.1rem;
+						margin-bottom: 0;
+						color: $gray-dark;
+					}
+				}
+			}
+		}
+
+		.camera-controls {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+
+			@include media-breakpoint-up(md) {
+				width: 50%;
+			}
+
+			@include media-breakpoint-up(lg) {
+				width: 43%;
+			}
+
+			@media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
+				justify-content: space-between;
+			}
+
+			> .item {
+				position: relative;
+				overflow: hidden;
+				border-radius: 3px;
+
+				@include media-breakpoint-up(md) {
+					width: 48%;
+				}
+
+				@media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
+					width: 48%;
+				}
+
+				> .photo {
+					> .image {
+						@extend .img-fluid;
+					}
+				}
+
+				.iconexpand {
+					width: 38px;
+					height: 38px;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%,-50%);
+					color: $gray-light;
+					line-height: 38px;
+					border-radius: 3px;
+					text-align: center;
+					background-color: #FFF;
+					display: block;
+					@include transition(0.3s);
+
+					&:hover {
+						background-color: rgba(#FFF, 0.8);
+						color: $gray;
+						@include transition(0.3s);
+					}
 				}
 			}
 		}

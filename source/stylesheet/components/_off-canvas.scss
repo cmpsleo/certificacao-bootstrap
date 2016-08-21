@@ -1,16 +1,25 @@
 .off-canvas {
 	width: 40%;
-	max-width: 120px;
+	max-width: 150px;
 	height: 100vh;
 	position: fixed;
 	top: 0;
 	left: -320%;
 	z-index: 2;
 	padding: 1rem 0;
-	@include transition(left .3s);
 	background-color: #FFF;
 	text-align: center;
 	overflow-y: auto;
+	@include transition(.3s);
+
+	@include media-breakpoint-down(lg) {
+		width: 120px;
+	}
+
+	@include media-breakpoint-up(lg) {
+		left: 0;
+		padding: 3rem 0;
+	}
 
 	.list {
 		@extend .nav;
@@ -73,6 +82,11 @@
 		.image {
 			height: 40px;
 		}
+
+		// @media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
+		// 	position: relative;
+		// 	margin-top: 2rem;
+		// }
 	}
 }
 
@@ -86,6 +100,7 @@
 		left: 0;
 		z-index: 1;
 		background-color: rgba(#000, 0.5);
+		@include transition(left .3s);
 	}
 
 	.off-canvas {
