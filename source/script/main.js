@@ -34,8 +34,8 @@ $(document).ready(function() {
 			hideOffcanvas($('html'));
 		});
 
-		$('[data-class="remove-swipe"]').on('swipeleft swiperight', function(e){
-			e.stopPropagation();
+		$('.range-input').on('swipeleft swiperight', function(e){
+			return false;
 		});
 
 		$(window).scroll(function() {
