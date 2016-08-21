@@ -10,7 +10,6 @@
 	background-color: #FFF;
 	text-align: center;
 	overflow-y: auto;
-	@include transition(.3s);
 
 	@include media-breakpoint-down(lg) {
 		width: 120px;

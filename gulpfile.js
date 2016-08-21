@@ -36,8 +36,7 @@ gulp.task('move-fonts', function(){
 gulp.task('build-js', function(){
 	return gulp.src([
 		'./source/libs/jquery/dist/jquery.min.js',
-		'./source/libs/jquery.mobile/jquery.mobile.custom.min.js',
-		'./source/libs/responsive-lightbox/jquery.lightbox.min.js'
+		'./source/libs/jquery.mobile/jquery.mobile.custom.min.js'
 	])
 	.pipe(gulp.dest('./dist/js/libs'))
 });

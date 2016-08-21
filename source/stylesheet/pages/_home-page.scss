@@ -90,6 +90,7 @@
 				padding: 1rem 0;
 				cursor: pointer;
 				text-align: center;
+				@include transition(background 0.3s);
 
 				@include media-breakpoint-up(sm) {
 					width: 20%;
@@ -106,6 +107,13 @@
 
 				&:hover {
 					background-color: $gray-lightest;
+					@include transition(background 0.3s);
+
+					.titleday,
+					.temp {
+						color: $gray-dark;
+						@include transition(color 0.3s);
+					}
 				}
 
 				.titleday,
@@ -113,6 +121,7 @@
 					padding-bottom: 1rem;
 					font-size: 1.1rem;
 					color: $gray-light;
+					@include transition(color 0.3s);
 
 					&:last-child {
 						padding-bottom: 0;
