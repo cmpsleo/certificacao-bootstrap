@@ -41,4 +41,8 @@ $(document).ready(function() {
 		// 	e.preventDefault();
 		// });
 	};
+
+	$('[data-class="gallery"]').lightbox({
+		nav: true,
+	});
 });

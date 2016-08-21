@@ -149,7 +149,7 @@
 			}
 
 			@include media-breakpoint-up(lg) {
-				width: 55%;
+				width: 48%;
 			}
 
 			> .item {
@@ -202,7 +202,7 @@
 			}
 
 			@include media-breakpoint-up(lg) {
-				width: 43%;
+				width: 50%;
 			}
 
 			@media(min-device-width: map-get($grid-breakpoints, xs)) and (orientation : landscape) {
